@@ -1,11 +1,11 @@
 import { useFrame } from "@react-three/fiber";
 import { easing } from "maath";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useSnapshot } from "valtio";
 
 import state from "../store";
 
-const CameraRig = ({ children }) => {
+const CameraRig = () => {
   const group = useRef();
   const snap = useSnapshot(state);
 
@@ -35,7 +35,7 @@ const CameraRig = ({ children }) => {
     );
   });
 
-  return <group ref={group}>{children}</group>;
+  return <group ref={group}></group>;
 };
 
 export default CameraRig;
