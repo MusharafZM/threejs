@@ -1,7 +1,7 @@
-/* eslint-disable react/no-unknown-property */
 import { Decal, useGLTF, useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { easing } from "maath";
+import React from "react";
 import { useSnapshot } from "valtio";
 
 import state from "../store";

@@ -2,7 +2,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useSnapshot } from "valtio";
 
 import { CustomButton } from "../components";
-
 import {
   headContainerAnimation,
   headContentAnimation,
@@ -29,10 +28,9 @@ const Home = () => {
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className="head-text">
-                LET'S <br className="x1:block hidden" /> DO IT
+                LETS <br className="xl:block hidden" /> DO IT.
               </h1>
             </motion.div>
-
             <motion.div
               {...headContentAnimation}
               className="flex flex-col gap-5"
